@@ -2,11 +2,18 @@ package ClassManagement;
 
 public class TeacherRecord extends Record {
 
-	public String address;
-	public String phone;
-	public String specialization;
-	public String location;
+	private String address;
+	private String phone;
+	private String specialization;
+	private String location;
 	
+	public TeacherRecord() {
+		super();
+		this.address = "";
+		this.phone = "";
+		this.specialization = "";
+		this.location = "";
+	}
 	public TeacherRecord(String recordID, String firstName, String lastName,
 			String address, String phone, String specialization, String location) {
 		super(recordID, firstName, lastName);
@@ -35,5 +42,16 @@ public class TeacherRecord extends Record {
 	public void setSpecialization(String specialization) {
 		this.specialization = specialization;
 	}
-
+	public String getAddress() {
+		return address;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public String getSpecialization() {
+		return specialization;
+	}
+	
+	
+	
 }
